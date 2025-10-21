@@ -4,24 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Herd">
+    <meta name="description" content="This page includes content assisted by AI tools.">
+
     <title>Getting Started at Launch Studio</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
     <!-- Page header -->
-    <nav style="text-align: center;">
+    <nav class="main-nav">
         <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
         <a href="projects.html">Projects</a> |
         <a href="contact.html">Contact</a>
     </nav>
-    <header>
-        <h1>Getting Started at Launch Studio!</h1>
+    <header class="page-header">
+        <h1>Launch Studio!</h1>
+        <img src="images/logo2-thumb.png" alt="Logo" class="logo">
     </header>
-    <!-- Main content -->
-    <main>
-        <h2>My Launch Studio Introduction</h2>
+
+    <aside class="sidebar">
         <nav>
             <H3>Contents</H3>
             <ul style="list-style-type: none;">
@@ -30,9 +54,14 @@
                 <li><a href="#learning">Learning Journey</a></li>
             </ul>
         </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <h2>My Launch Studio Introduction</h2>
 
         <section>
-            <h3 id="about-me">About Me</h3>
+            <h3 id="about-me" class="scroll-stop">About Me</h3>
             <p>
                 My name is Stephen Herd, and I am beginning my journey into web development with Launch Studio.
                 I've always been curious about how websites are built and how technology connects people,
@@ -40,22 +69,30 @@
                 chance to move from being a consumer of the web to becoming a creator who understands the
                 structure and logic behind the sites I use every day.
             </p>
-            <img src="images/avatar-md.png" alt="Stephen Herd Avatar">
             <p>
                 Outside of school, I have a variety of interests that shape who I am as a person. I enjoy
                 reading, gaming, fitness, music, or volunteering, and I often
                 find connections between those hobbies and the skills I want to develop as a coder. For example,
                 gaming has made me curious about interactive design.
             </p>
-            <p>
-                One of my goals as a student is to grow not just technically but also creatively. I want to learn how
-                to take an idea and bring it to life on the web, while also developing habits that make me a reliable
-                collaborator. By the end of this course, I hope to feel confident introducing myself as someone who
-                doesn't just study web development but actively practices it.
-            </p>
+            <div class="clearfix bordered-box">
+                <figure class="figure-right">
+                    <a href="images/avatar.png" target="_blank">
+                        <img src="images/avatar-md.png" class="fluid-image" alt="Stephen Herd Avatar">
+                    </a>
+                    <figcaption>Stephen Herd Avatar</figcaption>
+                </figure>
+                <h4>Professional Goals</h4>
+                <p>
+                    One of my goals as a student is to grow not just technically but also creatively. I want to learn how
+                    to take an idea and bring it to life on the web, while also developing habits that make me a reliable
+                    collaborator. By the end of this course, I hope to feel confident introducing myself as someone who
+                    doesn't just study web development but actively practices it.
+                </p>
+            </div>
         </section>
         <section>
-            <h3 id="dev-id">Developer Identity</h3>
+            <h3 id="dev-id" class="scroll-stop">Developer Identity</h3>
             <p>
                 When I think about my developer identity, I see myself as someone who is just starting to
                 learn the language of the web but already beginning to picture the kind of professional I want
@@ -63,13 +100,21 @@
                 all the answers, but I am learning how to ask the right questions, test my ideas, and rely on
                 structured problem-solving to move forward.
             </p>
-            <p>
-                My strengths as a developer come from qualities I already value in other areas of my life:
-                persistence, curiosity, and creativity. I may not write perfect code on the first try, but I am
-                willing to debug, research, and rework my approach until I find a solution. I also enjoy looking
-                for patterns, whether in code, design, or workflows, because patterns help me understand
-                how complex systems can be broken down into manageable steps.
-            </p>
+            <div class="clearfix bordered-box">
+                <figure class="figure-left">
+                    <a href="images/developer.png" target="_blank">
+                        <img src="images/developer-md.png" class="fluid-image" alt="Developer image">
+                    </a>
+                </figure>
+                <h4>Strengths</h4>
+                <p>
+                    My strengths as a developer come from qualities I already value in other areas of my life:
+                    persistence, curiosity, and creativity. I may not write perfect code on the first try, but I am
+                    willing to debug, research, and rework my approach until I find a solution. I also enjoy looking
+                    for patterns, whether in code, design, or workflows, because patterns help me understand
+                    how complex systems can be broken down into manageable steps.
+                </p>
+            </div>
             <p>
                 Over time, I want my developer identity to reflect confidence and professionalism. I want to be
                 seen not just as a student who completes assignments but as someone who brings a unique
@@ -79,7 +124,7 @@
             </p>
         </section>
         <section>
-            <h3 id="learning">Learning Journey</h3>
+            <h3 id="learning" class="scroll-stop">Learning Journey</h3>
             <p>
                 My decision to take this course comes from a desire to better understand how the web works
                 and to gain skills that are practical, creative, and in demand. I have used websites for as long
@@ -87,22 +132,31 @@
                 marks the beginning of my journey to move from curiosity into capability, where I can start
                 building and not just browsing.
             </p>
-            <p>
-                I expect that this journey will not always be easy. I know there will be moments of frustration
-                when code doesn't work or when I feel stuck on a problem. But I also see those challenges as
-                part of the process. Each mistake is a chance to learn, and each small success is a step
-                forward. I want to develop resilience as much as I develop technical knowledge, because both
-                are essential to becoming a capable web developer.
-            </p>
-            <p>
-                Looking ahead, I hope to use the skills from this class to create projects that reflect both my
-                personality and my professional goals. I would like to design pages that are clean, accessible,
-                and meaningful for real users. Beyond this class, I want to keep expanding my knowledge
-                into areas like responsive design, interactivity, and eventually full-stack development. This
-                course is the launchpad for that larger journey, and I am excited to take the first steps here.
-            </p>
+            <div class="clearfix bordered-box">
+                <figure class="figure-right">
+                    <a href="images/learning.png" target="_blank">
+                        <img src="images/learning-md.png" class="fluid-image" alt="Learning Journey image">
+                    </a>
+                </figure>
+                <h4>My Journey</h4>
+                <p>
+                    I expect that this journey will not always be easy. I know there will be moments of frustration
+                    when code doesn't work or when I feel stuck on a problem. But I also see those challenges as
+                    part of the process. Each mistake is a chance to learn, and each small success is a step
+                    forward. I want to develop resilience as much as I develop technical knowledge, because both
+                    are essential to becoming a capable web developer.
+                </p>
+                <p>
+                    Looking ahead, I hope to use the skills from this class to create projects that reflect both my
+                    personality and my professional goals. I would like to design pages that are clean, accessible,
+                    and meaningful for real users. Beyond this class, I want to keep expanding my knowledge
+                    into areas like responsive design, interactivity, and eventually full-stack development. This
+                    course is the launchpad for that larger journey, and I am excited to take the first steps here.
+                </p>
+            </div>
         </section>
     </main>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Stephen Herd</p>

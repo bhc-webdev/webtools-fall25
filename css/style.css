@@ -4,11 +4,12 @@
 #1B508D Blue
 #FC7307 Orange
 #4E2B0E Dark Brown
+#e75026 orange logo
 */
 @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -17,16 +18,9 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom right, #d4e4f7 0%, #1b508d 100%);
-    /* background: #35424a; */
-    padding: .5rem 0;
+    /* background: linear-gradient(to bottom right, #d4e4f7 0%, #1b508d 100%); */
+    background: #D4E4F7;
     text-align: center;
-}
-
-main {
-    padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 footer {
@@ -37,8 +31,8 @@ footer {
     margin-top: 1rem;
 }
 
-footer > p {
-    color:#d4e4f7;
+footer>p {
+    color: #d4e4f7;
 }
 
 h1 {
@@ -46,12 +40,19 @@ h1 {
     font-family: "Griffy", system-ui;
     font-weight: 800;
     font-style: normal;
-    font-size: 3rem;
+    /* font-size: 6rem; */
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    padding: 1rem;
+    margin: 1rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #1B508D;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -107,4 +108,75 @@ a:active {
 
 .nav-link:active {
     color: #F2F7FD;
+}
+
+.fluid-image {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 0.5rem 0 0;
+    width: auto;
+}
+
+.inline-control {
+    display: inline;
+    width: auto;
+    margin: 0 1rem 0 0;
+}
+
+button {
+    margin-top: 1rem;
+    width: auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #1B508D;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #D4E4F7;
+    color: #1B508D;
+}
+
+button[type="reset"] {
+    background-color: #FC7307;
+    color: #4E2B0E;
+}
+
+button[type="reset"]:hover {
+    background-color: #4E2B0E;
+    color: #F2F7FD;
+}
+
+p.form {
+    margin: 1rem 0 0 0;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
 }
